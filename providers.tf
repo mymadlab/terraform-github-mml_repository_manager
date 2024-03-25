@@ -1,19 +1,8 @@
 terraform {
-  cloud {
-    organization = "mymadlab"
-    workspaces {
-      tags = ["facility", "infra"]
-    }
-  }
-
   required_providers {
-    provider1 = {
-      source  = "owner/provider1"
-      version = "#.#.#"
+    github = {
+      source = "integrations/github"
+      version = "6.0.1"
     }
   }
-}
-
-provider "provider1" {
-  
 }

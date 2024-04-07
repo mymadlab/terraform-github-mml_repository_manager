@@ -10,7 +10,7 @@ resource "github_repository" "repository" {
   template {
     owner                = var.organization
     repository           = local.repo_template_name
-    include_all_branches = var.include_branchs
+    include_all_branches = var.include_branches
   }
 
 }

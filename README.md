@@ -23,4 +23,4 @@ module "github_repository_manager" {
 
 ## Dependencies
 
-- [integrations/github](https://registry.terraform.io/providers/integrations/github/latest): >=0.52.0
+- [integrations/github](https://registry.terraform.io/providers/integrations/github/latest): >=6.0.1

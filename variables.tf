@@ -10,6 +10,12 @@ variable "has_issues" {
   default     = true
 }
 
+variable "include_branches" {
+  description = "Turns on and off including the templated repository branches on and off"
+  type        = bool
+  default     = false
+}
+
 variable "organization" {
   description = "The name of the github organization"
   type        = string
@@ -48,12 +54,6 @@ variable "visibility" {
 
 variable "wiki" {
   description = "Turn the wiki feature on or off"
-  type        = bool
-  default     = false
-}
-
-variable "include_branches" {
-  description = "Turns on and off including the templated repository branches on and off"
   type        = bool
   default     = false
 }

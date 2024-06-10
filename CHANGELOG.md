@@ -18,15 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
  -->
 
-## [v1.2.1] - 2024-04-06: Module cleanup work
+## [v0.2.0] - 2024-06-09: Module cleanup work
 
 ### Added
 
-- Change Log
-- Reference to the tfe provider with version
-- Required terraform version
-
-### Changed
-
-- Updates to README to properly document the module
-- Added description to input variables
+- Enable protection on the main branch

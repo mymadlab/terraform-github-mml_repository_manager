@@ -9,7 +9,7 @@ Responsible for creating (uses clones), updating, and deleting github repositori
 ```HCL
 module "github_repository_manager" {
   source  = "app.terraform.io/mymadlab/mml_repository_manager/github"
-  version = "~> 0.1.0"
+  version = "~> 0.2.0"
 
   repo_name   = "name_of_repository"
   description = "description of repository"
@@ -23,4 +23,4 @@ module "github_repository_manager" {
 
 ## Dependencies
 
-- [integrations/github](https://registry.terraform.io/providers/integrations/github/latest): >=6.0.1
+- [integrations/github](https://registry.terraform.io/providers/integrations/github/latest): >=6.2.0

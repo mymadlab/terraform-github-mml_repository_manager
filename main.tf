@@ -1,3 +1,21 @@
+resource "github_branch_protection" "main" {
+  repository_id     = github_repository.repository.node_id
+  enforce_admins = true
+  force_push_bypassers = []
+  pattern         = "main"
+
+  required_pull_request_reviews {
+    dismiss_stale_reviews =  false
+    dismissal_restrictions = []
+    pull_request_bypassers = []
+    require_code_owner_reviews = false
+    require_last_push_approval = false
+    required_approving_review_count = 1
+    restrict_dismissals = false
+  }
+
+}
+
 resource "github_repository" "repository" {
 
   name        = var.repo_name
